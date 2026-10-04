@@ -1,16 +1,78 @@
-# React + Vite
+# Employee Management UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based frontend for managing employee records through a Spring Boot REST API.
 
-Currently, two official plugins are available:
+The application provides a simple interface to create, view, update, delete, search, and filter employees.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- React
+- JavaScript
+- Vite
+- Material UI
+- Fetch API
+- ESLint
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- View all employees
+- Add employees
+- Edit employee details
+- Delete employees with confirmation
+- Search employees by name, email, or role
+- Form validation
+- Loading states
+- Success and error messages
+- Responsive Material UI components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Backend API
+
+This frontend communicates with the Employee Management API.
+
+Backend repository:
+
+https://github.com/RepalaPrathyusha1998/employee-management-api
+
+The backend runs by default at:
+
+```text
+http://localhost:8080
+```
+## Configuration
+
+The API URL is configured using a Vite environment variable.
+
+Create a .env file in the project root:
+
+``` bash
+VITE_API_URL=http://localhost:8080
+```
+The .env file is excluded from Git using .gitignore.
+
+## Running the Application
+### Prerequisites
+
+Make sure the following are installed:
+
+Node.js
+npm
+Employee Management API
+### Install dependencies
+``` bash
+npm install
+```
+### Start the development server
+``` bash
+npm run dev
+```
+The application will be available at:
+``` text
+http://localhost:5173
+```
+
+## Linting
+Run ESLint with:
+
+``` bash
+npm run lint
+```
