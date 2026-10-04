@@ -76,3 +76,9 @@ Run ESLint with:
 ``` bash
 npm run lint
 ```
+
+## Screenshots
+
+### Employee Management Dashboard
+
+![Employee Management Dashboard](screenshots/employee-management-dashboard.png)
